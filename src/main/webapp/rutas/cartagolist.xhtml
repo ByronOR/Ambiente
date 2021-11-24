@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    <body>
+        <ui:composition template="./../resources/plantillas/plantilla.xhtml">
+            <ui:define name="content">
+                <h:form id="rutaList">
+                    <div id="content" class="left_content">
+                        <h1 class="section-header_2">Cartago</h1>
+                        <hr style="border-color: #337ab7"/>
+                        
+                        <b:dataTable value="#{rutaController.getRutasCartago(usuarioController.id)}"
+                                     var="ruta"
+                                     excel="true"
+                                     csv="true"
+                                     pdf="true"
+                                     columnVisibility="true"
+                                     copy="true"
+                                     print="true">
+
+                            <b:dataTableColumn value="#{ruta.codigo}"
+                                               width="8%"
+                                               label="Código de Ruta"/>
+
+                            <b:dataTableColumn value="#{ruta.nombre}"
+                                               width="19%"
+                                               label="Nombre"/>
+
+                            <b:dataTableColumn value="#{ruta.horario}"
+                                               width="19%"
+                                               label="Horario"/>
+
+                            <b:dataTableColumn value="#{ruta.fecha}"
+                                               width="19%"
+                                               label="Fecha"/>
+
+                            <b:dataTableColumn value="#{ruta.duracion}"
+                                               width="19%"
+                                               label="Duracion"/>
+
+                            <b:dataTableColumn value="#{ruta.parada}"
+                                               width="19%"
+                                               label="Parada"/>
+
+                            <b:dataTableColumn value="#{ruta.precio}"
+                                               width="19%"
+                                               label="Precio"/>
+
+                            <b:dataTableColumn width="10%"
+                                               style="text-align: center"
+                                               label="Accion">
+                                    <b:commandButton value="Reservar"
+                                                     look="success"
+                                                     action="#{reservaController.insert(ruta.id, usuarioController.id)}"/>
+                            </b:dataTableColumn>
+
+
+                        </b:dataTable>
+                    </div>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

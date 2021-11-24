@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+          <h:outputStylesheet library="css" name="general.css"/>
+        <ui:composition template="./../resources/plantillas/plantilla.xhtml">
+            
+            
+
+            <ui:define name="content">
+                
+                <h1 class="section-header">NOTICIAS</h1>
+                <hr style="border-color: #337ab7"/>
+                 
+                <br/>
+                
+                <b:carousel id="bus" style="height: auto; width: auto;">
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="11.jpg" alt="bus" />
+                        </b:carouselItem>
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="buscovid.jpg" alt="chofer" />
+                        </b:carouselItem>
+                                        
+                    </b:carousel>
+                    
+                     <div id="content" class="left_content">
+
+                    <h1 class="section-header"> Autobús: modificación temporal de horarios COVID-19</h1>
+                    <hr/>
+                    <br/>
+               
+              
+                <p align="justify">
+                  De acuerdo con disposiciones emitidas por el Consejo de Transporte Público (CTP), 
+                  en la semana del 13 al 17 de julio:
+
+No se permitirá el servicio de rutas regulares con recorridos de 75 kilómetros o superiores a esa distancia.
+Las rutas regulares con recorridos menores a 75 kilómetros deberán mantener las operaciones hasta por el 50 % del
+servicio en las rutas autorizadas.
+
+Otras disposiciones indicadas por el CTP son: </p>
+   <p>                                    </p>
+              <p align="justify">
+
+Cada operador es responsable de brindar los servicios a las personas usuarias que deben cubrir las actividades
+laborales y productivas esenciales, debido a que conoce la movilización de la población dentro de la ruta o rutas
+autorizadas, de tal manera que podrá habilitar los servicios que considere necesarios a fin de garantizar el
+traslado de los trabajadores, lo cual deberá comunicar al CTP. </p>
+
+<p>                                    </p>
+              <p align="justify">
+
+Deben mantenerse los primeros y últimos servicios para garantizar los servicios para movilizarse a sus centros
+laborales. En caso de que estos se encuentren fuera del rango de restricción de circulación vehicular determinada
+en dicha instrucción, pueden brindarse sin ningún problema. No podrán suspender servicios en ningún momento, 
+lo que si pueden hacer es adecuarlos a las circunstancias operativas y de cumplimiento a la protección de la 
+salud de las personas de conformidad con la restricción sanitaria. </p>
+
+<p>                                    </p>
+              <p align="justify">
+La capacidad permitida dentro de las unidades de movilización es el 100% de pasajeros movilizados sentados, 
+es decir NO llevar pasajeros de pie.
+
+Es obligatorio el uso de mascarillas o caretas.
+
+Informar a los usuarios las circunstancias de operación que mantendrán durante los días de restricción 
+establecidos.
+
+Podrán mantener los servicios de encomienda bajo total responsabilidad de las empresas.
+               
+               </p> 
+</div>
+
+                <br/>
+
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
+

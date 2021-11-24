@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <style>
+            .centrado{ 
+                position:absolute;
+                top:50%;
+                left: 50%;
+                bottom:0;
+                width: 400px;
+                height: 300px;
+                margin: auto;
+                margin-left: -200px;
+                margin-top: -150px;
+            }   
+        </style>
+        <h:outputStylesheet library="css" name="general.css"/>
+    </h:head>
+
+    <body >
+        <ui:composition template="./resources/plantillas/plantilla.xhtml">
+            <ui:define name="content">
+                <div id="content" class="left_content">
+                    <h1 class="section-header">Bienvenido a Bus Drive</h1>
+                    <hr style="border-color: #337ab7"/>
+                    
+                    <br/>
+                    
+                    <b:carousel id="bus" style="height: auto; width: auto;">
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="1.jpg" alt="bus" />
+                        </b:carouselItem>
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="2.jpg" alt="chofer" />
+                        </b:carouselItem>
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="3.jpg" alt="asientos" />
+                        </b:carouselItem>
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="4.jpg" alt="ruta" />
+                        </b:carouselItem> 
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="5.jpg" alt="lounge" />
+                        </b:carouselItem>
+                        <b:carouselItem>
+                            <h:graphicImage library="imagen" name="6.jpg" alt="menu" />
+                        </b:carouselItem>                  
+                    </b:carousel>
+                    
+                    <h2 class="section-header">Noticias</h2>
+                    
+                    <hr/>
+
+                    <ul class="cardsNews">
+                        <li class="cards_item">
+                            <div class="cardNews">
+                                <div class="card_image"><h:graphicImage library="imagen" name="20.jpg" alt="piloto" /></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">Consejos para viajar Relacionados con la Covid 19</h2>
+                                    <p>                                                      </p>
+
+                                    <p class="card_text" align="justify">
+
+                                        ¿Estás pensando en viajar durante la pandemia? Toma precauciones para protegerte de la COVID-19.
+                                        La vacunación generalizada se muestra prometedora para terminar con la pandemia de la enfermedad 
+                                        por coronavirus 2019 (COVID-19), pero no sucederá de la noche a la mañana. Mientras tanto, sigue 
+                                        tomando precauciones para protegerte a ti y proteger a otros si tienes que viajar. Si estás totalmente
+                                        vacunado, es menos probable que contraigas y propagues la COVID-19....</p>
+                                    <b:button class="btnNews card_btn" value="Leer más" 
+                                              href="/ProyectoDesarrollow-1/faces/noticias/noticia1.xhtml"/>
+                                </div>
+                            </div>
+                        </li>
+                        <br/>
+                        <li class="cards_item">
+                            <div class="cardNews">
+                                <div class="card_image"><h:graphicImage library="imagen" name="18.jpg" alt="piloto" /></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">Autobús: modificación temporal de horarios COVID-19</h2>
+                                    <p>                                                      </p>
+                                    <p class="card_text"  align="justify">De acuerdo con disposiciones emitidas por el Consejo de Transporte
+                                        Público (CTP), en la semana del 13 al 17 de julio: No se permitirá el servicio de 
+                                        rutas regulares con recorridos de 75 kilómetros o superiores a esa distancia. Las 
+                                        rutas regulares con recorridos menores a 75 kilómetros deberán mantener las 
+                                        operaciones hasta por el 50 % del servicio en las rutas autorizadas. Otras
+                                        disposiciones indicadas por el CTP son....</p>
+
+                                    <b:button class="btnNews card_btn" value="Leer más" 
+                                              href="/ProyectoDesarrollow-1/faces/noticias/noticia3.xhtml"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="cardNews">
+                                <div class="card_image"><h:graphicImage library="imagen" name="14.jpg" alt="piloto" /></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">Tres desaparecidos y cientos de evacuados por lluvias en Costa Rica</h2>
+                                    <p>                                                      </p>
+
+                                    <p class="card_text" align="justify">Las autoridades de Costa Rica informaron este sábado (24.07.2021) 
+                                        que tres personas están desaparecidas y 1.564 se encuentran en albergues a causa 
+                                        de las inundaciones que desde el jueves afectan el Caribe y la zona norte del país.
+                                        El informe de la Comisión Nacional de Emergencias (CNE) de este sábado indica que
+                                        se han habilitado 29 albergues, a los cuales han sido trasladadas 1.564 personas 
+                                        cuyas viviendas fueron anegadas por los ríos que se desbordaron debido a las fuertes
+                                        lluvias.....</p>
+                                    <b:button class="btnNews card_btn" value="Leer más" 
+                                              href="/ProyectoDesarrollow-1/faces/noticias/noticia2.xhtml"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

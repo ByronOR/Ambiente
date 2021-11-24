@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    <h:head>
+        <title>Account</title>
+        <h:outputStylesheet library="css" name="logincss.css"/>
+
+        <style>
+            .centrado{ 
+                position:absolute;
+                top: 40%;
+                left: 45%;
+                bottom:0;
+                width: 630px;
+                height: 550px;
+                margin: auto;
+                margin-left: -200px;
+                margin-top: -150px;
+            }   
+        </style>
+    </h:head>
+    
+    <h:body>
+        <div id="particles-js">
+            <h:form id="accountInfo">
+                <b:panel title="Cuenta creada correctamente" look="info" style-class="centrado">
+                    <b:row>
+                        <b:column medium-screen="4"/>
+
+                        <b:column medium-screen="6">
+                            <h:outputLabel value="Informacion sobre la cuenta"/>
+                        </b:column>
+                    </b:row>
+
+                    <b:row>
+                        <b:column medium-screen="2"/>
+
+                        <b:column medium-screen="4">
+                            <p:barcode value="#{usuarioController.toString(clienteController)}" type="qr"  width="400px"/>
+                        </b:column>
+                    </b:row>
+
+                    <b:row>
+                        <b:column medium-screen="4"/>
+
+                        <b:column medium-screen="4">
+                            <b:commandLink value="Log In" 
+                                           look="primary"
+                                           href="/ProyectoDesarrollow-1/faces/logIn.xhtml"/>
+                        </b:column>
+                    </b:row>
+                </b:panel>
+            </h:form>
+        </div>
+    </h:body>
+    
+    <h:outputScript library = "js" name = "particles.js"></h:outputScript>
+    <h:outputScript library = "js" name = "app.js"></h:outputScript>
+</html>

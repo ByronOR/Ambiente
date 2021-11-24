@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+        <ui:composition template="./resources/plantillas/plantilla.xhtml">
+            <ui:define name="content">
+                <h:form>
+                    <div id="content" class="left_content">
+                        <h1 class="section-header_2">Mis Reservas</h1>
+                        <hr style="border-color: #337ab7"/>
+                        
+                        <b:dataTable value="#{reservaController.getReservas(usuarioController.id)}"
+                                     var="reserva"
+                                     excel="true"
+                                     csv="true"
+                                     pdf="true"
+                                     columnVisibility="true"
+                                     copy="true"
+                                     print="true">
+                            <b:dataTableColumn value="#{reserva.id}"
+                                               width="19%"
+                                               label="Numero de Reserva"/>
+
+                            <b:dataTableColumn value="#{reserva.ruta.codigo}"
+                                               width="19%"
+                                               label="Codigo Ruta"/>
+
+                            <b:dataTableColumn value="#{reserva.ruta.nombre}"
+                                               width="19%"
+                                               label="Ruta"/>
+
+                            <b:dataTableColumn value="#{reserva.ruta.horario}"
+                                               width="19%"
+                                               label="Horario"/>
+
+                            <b:dataTableColumn value="#{reserva.ruta.fecha}"
+                                               width="19%"
+                                               label="Fecha"/>
+
+                            <b:dataTableColumn value="#{reserva.ruta.duracion}"
+                                               width="19%"
+                                               label="Duracion"/>
+
+                            <b:dataTableColumn value="#{reserva.ruta.precio}"
+                                               width="19%"
+                                               label="Precio"/>
+
+                            <b:dataTableColumn width="10%"
+                                               style="text-align: center"
+                                               label="Accion">
+                                <b:commandButton value="Eliminar"
+                                                 look="danger"
+                                                 action="#{reservaController.delete(reserva.id)}"/>
+                            </b:dataTableColumn>
+                        </b:dataTable>
+                    </div>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

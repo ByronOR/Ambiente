@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+        <h:outputStylesheet library="css" name="general.css"/>
+        <ui:composition template="./resources/plantillas/plantilla.xhtml">
+            <ui:define name="content">
+                <div id="content" class="left_content">
+                    <h1 class="section-header">¿Dónde nos encontramos?</h1>
+                    <hr style="border-color: #337ab7"/>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125770.8028777803!2d-84.1520095009879!3d9.905815631848544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f47ea4ff37%3A0x7a7818a6a9e5c90c!2sUniversidad%20Fid%C3%A9litas!5e0!3m2!1ses-419!2scr!4v1627949602212!5m2!1ses-419!2scr" width="1860" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    
+                    <br/>
+                    <hr/>
+                    <section id="contactUs">
+                        <section id="contact">
+
+                            <h3 class="section-header">Contacto</h3>
+
+                            <div class="contact-wrapper">
+                                <form id="contact-form" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" id="name" placeholder="NOMBRE" name="name" value="" required='true'></input>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required='true'></input>
+                                        </div>
+                                    </div>
+
+                                    <textarea class="form-control" rows="10" placeholder="MENSAJE" name="message" required='true'></textarea>
+
+                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                        <div class="alt-send-button">
+                                            <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
+                                        </div>
+                                    </button>
+                                </form>
+
+                                <div class="direct-contact-container">
+                                    <ul class="contact-list">
+                                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">San Pedro, San Jose</span></i></li>
+
+                                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Llamar">(506) 8728-1968</a></span></i></li>
+
+                                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Enviar correo">busdrivecontacto@gmail.com</a></span></i></li>
+
+                                    </ul>
+
+                                    <hr style="border-color: #000;"/>
+                                    
+                                    <ul class="social-media-list">
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>       
+                                    </ul>
+                                    <hr style="border-color: #000;"/>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </ui:define>
+        </ui:composition>
+        
+        <h:outputScript library = "js" name = "general.js"></h:outputScript>
+    </body>
+</html>
+

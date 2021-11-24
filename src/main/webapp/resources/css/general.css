@@ -1,0 +1,449 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/08/2021, 04:20:20 PM
+    Author     : Chris
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+.left_content {
+    background-color: #FFFFFF;
+    padding: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.about{
+    cursor: pointer;
+    background-color: #A2D5F2;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.about h1 {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.about h2 {
+    opacity: .8;
+}
+.about span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin:auto;
+    border-radius:50%;  
+    font-size: 40px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    background-color: #07689F;
+    border: 2px solid #07689F;
+
+    webkit-transition:all .5s ease;
+    moz-transition:all .5s ease;
+    os-transition:all .5s ease;
+    transition:all .5s ease;
+
+}
+.about-item:hover span{
+    opacity: 1;	
+    border: 2px solid #2E82B2;
+    font-size: 42px;
+    -webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+    -moz-transform: scale(1.1,1.1) rotate(360deg) ;
+    -o-transform: scale(1.1,1.1) rotate(360deg) ;
+    transform: scale(1.1,1.1) rotate(360deg) ;
+}
+.about-item:hover h2{
+    opacity: 1;
+    -webkit-transform: scale(1.1,1.1)  ;
+    -moz-transform: scale(1.1,1.1)  ;
+    -o-transform: scale(1.1,1.1)  ;
+    transform: scale(1.1,1.1) ;
+}
+.about .lead{
+    color: #000;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/*contac us*/
+
+#contactUs {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 40px 'Segoe UI', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.section-header_2 {
+    text-align: left;
+    margin: 0 auto;
+    padding: 5px 0;
+    font: 200 30px 'Segoe UI', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.form-control, 
+textarea {
+    max-width: 400px;
+    background-color: #8C99A3;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+}
+
+.send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+    max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #000;
+}
+
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #000;
+}
+
+.place {
+    margin-left: 62px;
+}
+
+.phone {
+    margin-left: 56px;
+}
+
+.gmail {
+    margin-left: 53px;
+}
+
+.contact-text a {
+    color: #000;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: #07689F;
+    text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #A2D5F2;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #A2D5F2; 
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+        margin: 0 auto;
+    }  
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }    
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+
+    .direct-contact-container, .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }  
+    .form-control, textarea {
+
+        margin: 0 auto;
+    }
+
+
+    .name, .email, textarea {
+        width: 280px;
+    } 
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }  
+    .social-media-list {
+        left: 0;
+    }
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+}
+
+/*Noticias*/
+
+/* Design */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.cardsNews {
+    color: #272727;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+}
+
+.btnNews {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btnNews:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+.cardNews {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.cardNews {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #07689F 40%, #11D3BC 100%);
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;    
+    font-weight: lighter;
+    text-align: justify;
+}

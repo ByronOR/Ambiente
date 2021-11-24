@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+
+    <body>
+        <h:outputStylesheet library="css" name="general.css"/>
+        <ui:composition template="./resources/plantillas/plantilla.xhtml">
+            <ui:define name="content">
+                <h1 class="section-header">Sobre Nosotros</h1>
+                <hr style="border-color: #337ab7"/>
+                
+                <b:carousel id="bus" style="height: auto; width: auto;">
+                    <b:carouselItem>
+                        <h:graphicImage library="imagen" name="7.jpg" alt="trabajadores" />
+                    </b:carouselItem>
+                    <b:carouselItem>
+                        <h:graphicImage library="imagen" name="8.jpg" alt="trabajadores2" />
+                    </b:carouselItem>
+                    <b:carouselItem>
+                        <h:graphicImage library="imagen" name="9.jpg" alt="trabajadores3" />
+                    </b:carouselItem>
+                </b:carousel>
+
+                <div id="content" class="left_content">
+                    <h1 class="section-header">El lujo de un avión por tierra </h1>
+                    <hr/>
+                    <br/>
+                    <p style="font-size: 15px;" align="justify" >
+                        Somos una empresa familiar dedicada a brindar transporte público de calidad en Costa Rica.
+                        Velamos por el bienestar de nuestras comunidades, especialmente nuestros vecinos, amigos
+                        y familiares que confían en nosotros y nuestro equipo para transportarlos de manera segura.
+
+                        Nos esforzamos diariamente por mejorar nuestras comunidades a través de proporcionar los servicios 
+                        de transporte más seguros, amigables con el ambiente, y confiables posible. Como líderes en el negocio
+                        del transporte seguro y profesional de pasajeros, nos sentimos muy orgullosos de asegurarnos que sus 
+                        necesidades específicas sean atendidas.
+                    </p> 
+                </div>
+
+                <br/>
+                
+                <section class="text-center about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200" >
+                                <span class="fa fa-check"></span>
+                                <h2>Misión</h2>
+                                <p class="lead" align="justify" >
+                                    Juntos conectamos la región al proporcionar una red de transporte comprometida 
+                                    al medio ambiente, mejorando la calidad de vida al unir personas y comunidades.
+                                </p>
+                            </div>
+                            
+                            <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                                <span class="fa fa-eye"></span>
+                                <h2>Visión</h2>
+                                <p class="lead" align="justify">Proveer un sistema integrado de servicios de 
+                                    transporte público innovadores, accesibles y 
+                                    eficientes que aumenten el acceso a las oportunidades y contribuyan a un
+                                    ambiente saludable
+                                    para las personas de Costa Rica.
+                                </p>
+                            </div>
+                            
+                            <div class="clearfix visible-md-block visible-sm-block"></div>
+                            
+                            <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                                <span class="fa fa-heart"></span>
+                                <h2>Valores</h2>
+                                <p class="lead" align="justify" >Proveer un sistema integrado de servicios de transporte público innovadores, accesibles y 
+                                    eficientes que aumenten el acceso a las oportunidades y contribuyan a un ambiente saludable
+                                    para las personas de Costa Rica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+
